@@ -36,6 +36,7 @@
             this.ageTextBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.outputRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,11 +106,21 @@
             this.outputRichTextBox.TabIndex = 3;
             this.outputRichTextBox.Text = "";
             // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(141, 134);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 4;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            // 
             // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.outputRichTextBox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.ageTextBox);
@@ -136,5 +147,6 @@
         private System.Windows.Forms.TextBox ageTextBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.RichTextBox outputRichTextBox;
+        private System.Windows.Forms.Button clearButton;
     }
 }
